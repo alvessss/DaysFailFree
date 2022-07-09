@@ -25,8 +25,19 @@ public class Calendar {
          {"SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SABADO", "DOMINGO"}                                                                    // PT-BR
    };
 
-   public static String getNameOfCurrentDay(int IDIOM){ return DAYS_NAMES[IDIOM][getCurrentDay() - 1]; }
-   public static String getNameOfCurrentMonth(int IDIOM){ return MONTH_NAMES[IDIOM][getCurrentMonth() - 1]; }
-   public static int getCurrentDay(){ return javaCalendar.get(java.util.Calendar.DAY_OF_WEEK); }
-   public static int getCurrentMonth(){ return javaCalendar.get(java.util.Calendar.MONTH); }
+   public static String getNameOfCurrentDay(int IDIOM){
+      return DAYS_NAMES[IDIOM][getCurrentDay() - 1];
+   }
+
+   public static String getNameOfCurrentMonth(int IDIOM){
+      return MONTH_NAMES[IDIOM][getCurrentMonth() - 1];
+   }
+
+   public static int getCurrentDay(){
+      return javaCalendar.get(java.util.Calendar.DAY_OF_WEEK);
+   }
+
+   public static int getCurrentMonth(){
+      return javaCalendar.get(java.util.Calendar.MONTH);
+   }
 }
