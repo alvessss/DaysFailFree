@@ -7,11 +7,12 @@
     tools:ignore="HardcodedText">
 
     <LinearLayout
-        android:id="@+id/header"
-        android:layout_width="match_parent"
+        android:id="@+id/month_container"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/header_color"
-        android:layout_alignParentTop="true">
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
         <TextView
             android:id="@+id/header_text"
             android:layout_width="match_parent"
@@ -19,22 +20,20 @@
             android:text="January"
             android:textSize="@dimen/header_text_size"
             android:textColor="@color/header_text_color"
+            android:background="@color/header_color"
             android:gravity="center"/>
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/days_of_week_columns"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/header"
         android:gravity="center">
 
         <LinearLayout
             android:id="@+id/column_monday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minWidth="58dp"
             android:orientation="vertical">
 
             <TextView
@@ -99,7 +98,6 @@
             android:id="@+id/column_tuesday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minWidth="58dp"
             android:orientation="vertical">
 
             <TextView
@@ -163,7 +161,6 @@
             android:id="@+id/column_wednesday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minWidth="58dp"
             android:orientation="vertical">
 
             <TextView
@@ -227,7 +224,6 @@
             android:id="@+id/column_thursday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minWidth="58dp"
             android:orientation="vertical">
 
             <TextView
@@ -291,7 +287,6 @@
             android:id="@+id/column_friday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minWidth="58dp"
             android:orientation="vertical">
 
             <TextView
@@ -355,7 +350,6 @@
             android:id="@+id/column_saturday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minWidth="58dp"
             android:orientation="vertical">
 
             <TextView
@@ -419,7 +413,6 @@
             android:id="@+id/column_sunday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minWidth="58dp"
             android:orientation="vertical">
 
             <TextView
@@ -478,5 +471,6 @@
                 android:padding="@dimen/days_of_week_columns_padding"
                 android:layout_margin="1dp"/>
         </LinearLayout>
+    </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
