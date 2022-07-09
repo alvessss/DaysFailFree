@@ -10,4 +10,6 @@
     <color name="header_color">#F44336</color>
     <color name="header_text_color">#FFFFFF</color>
     <color name="activity_background_color">#EEECEC</color>
+    <color name="days_of_week_columns_background_color">#51BCED</color>
+    <color name="days_of_week_columns_foreground_color">#FFFFFF</color>
 </resources>
