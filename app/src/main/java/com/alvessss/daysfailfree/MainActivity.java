@@ -3,7 +3,6 @@ package com.alvessss.daysfailfree;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-// TODO: extract calendar data from some API to fill the Calendar View
 
 public class MainActivity extends AppCompatActivity {
    @Override
