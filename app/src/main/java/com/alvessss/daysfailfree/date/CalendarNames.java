@@ -13,7 +13,7 @@ public class CalendarNames {
 
    public static final String[][]
       DAYS_NAMES = {
-         {"MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"},                                                           // EN-US
-         {"SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SABADO", "DOMINGO"}                                                                    // PT-BR
+         {"SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"},                                                           // EN-US
+         {"DOMINGO", "SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SABADO"}                                                                    // PT-BR
    };
 }

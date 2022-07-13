@@ -20,13 +20,14 @@ public class Month {
    public static Month get(int IDIOM) {
       final Calendar calendar = Calendar.getInstance();
       final int currentDay = calendar.get(Calendar.DAY_OF_MONTH);
-      final int currentMonth = calendar.get(Calendar.MONTH);
-      final String currentName = CalendarNames.MONTH_NAMES[IDIOM][calendar.get(Calendar.MONTH) - 1];
+      final int currentMonth = calendar.get(Calendar.MONTH) + 1;
+      final String currentName = CalendarNames.MONTH_NAMES[IDIOM][calendar.get(Calendar.MONTH)];
 
       final Day[] days = new Day[calendar.getActualMaximum(Calendar.DAY_OF_MONTH)];
+      calendar.set(Calendar.DAY_OF_MONTH, 1);
       for (int indexOfDay = 0; indexOfDay < days.length; indexOfDay++){
-         calendar.set(Calendar.DAY_OF_MONTH, indexOfDay);
          days[indexOfDay] = new Day(CalendarNames.DAYS_NAMES[IDIOM][calendar.get(Calendar.DAY_OF_WEEK) - 1], indexOfDay + 1);
+         calendar.add(Calendar.DAY_OF_MONTH, 1);
       }
 
       return new Month(currentName, currentMonth, days, currentDay);

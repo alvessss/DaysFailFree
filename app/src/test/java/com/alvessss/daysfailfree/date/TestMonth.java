@@ -35,12 +35,12 @@ public class TestMonth {
       final int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
       final int maxDays = currentMonth.getDays().length;
 
-      for (int dom = dayOfMonth, dow = dayOfWeek; dom < maxDays; dom++){
-         assertEquals(currentMonth.getDays()[dom - 1].getIndex(), dom);
-         assertEquals(currentMonth.getDays()[dom - 1].getName(), CalendarNames.DAYS_NAMES[EN_US][dow - 1]);
-         if (dow == 7){
+      for (int dom = dayOfMonth, dow = dayOfWeek; dom <= maxDays; dom++, dow++){
+         if (dow == 8){
             dow = 1;
          }
+         assertEquals(currentMonth.getDays()[dom - 1].getIndex(), dom);
+         assertEquals(currentMonth.getDays()[dom - 1].getName(), CalendarNames.DAYS_NAMES[EN_US][dow - 1]);
       }
    }
 }
