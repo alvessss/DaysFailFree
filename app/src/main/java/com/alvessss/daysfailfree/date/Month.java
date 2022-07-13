@@ -22,11 +22,17 @@ public class Month {
       final int currentDay = calendar.get(Calendar.DAY_OF_MONTH);
       final int currentMonth = calendar.get(Calendar.MONTH) + 1;
       final String currentName = CalendarNames.MONTH_NAMES[IDIOM][calendar.get(Calendar.MONTH)];
-
       final Day[] days = new Day[calendar.getActualMaximum(Calendar.DAY_OF_MONTH)];
+
+      String name;
+      int index;
+      int dayOfWeek;
       calendar.set(Calendar.DAY_OF_MONTH, 1);
       for (int indexOfDay = 0; indexOfDay < days.length; indexOfDay++){
-         days[indexOfDay] = new Day(CalendarNames.DAYS_NAMES[IDIOM][calendar.get(Calendar.DAY_OF_WEEK) - 1], indexOfDay + 1);
+         dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK) - 1;
+         name = CalendarNames.DAYS_NAMES[IDIOM][dayOfWeek];
+         index = indexOfDay + 1;
+         days[indexOfDay] = new Day(name, index);
          calendar.add(Calendar.DAY_OF_MONTH, 1);
       }
 
