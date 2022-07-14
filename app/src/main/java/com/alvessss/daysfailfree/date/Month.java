@@ -68,7 +68,7 @@ public class Month {
    }
 
    public boolean increaseCurrentDay(){
-      if (currentDay < (days.length - 1)){
+      if (currentDay < days.length){
          currentDay++;
          return true;
       }
