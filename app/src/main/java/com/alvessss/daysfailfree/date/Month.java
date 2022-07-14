@@ -39,6 +39,10 @@ public class Month {
       return new Month(currentName, currentMonth, days, currentDay);
    }
 
+   @Override public String toString(){
+      return String.format("%s (%d)", name.toUpperCase(), index);
+   }
+
    public String getName(){
       return name;
    }

@@ -11,18 +11,18 @@ public class TestMonth {
    public void checkMonthNames(){
       Month currentMonth = Month.get(EN_US);
       switch (currentMonth.getIndex()) {
-         case   1: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][0]); break;
-         case   2: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][1]); break;
-         case   3: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][2]); break;
-         case   4: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][3]); break;
-         case   5: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][4]); break;
-         case   6: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][5]); break;
-         case   7: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][6]); break;
-         case   8: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][7]); break;
-         case   9: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][8]); break;
-         case  10: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][9]); break;
-         case  11: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][10]); break;
-         case  12: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][11]); break;
+         case  1: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][0]); break;
+         case  2: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][1]); break;
+         case  3: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][2]); break;
+         case  4: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][3]); break;
+         case  5: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][4]); break;
+         case  6: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][5]); break;
+         case  7: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][6]); break;
+         case  8: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][7]); break;
+         case  9: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][8]); break;
+         case 10: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][9]); break;
+         case 11: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][10]); break;
+         case 12: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][11]); break;
       }
    }
 
@@ -41,6 +41,25 @@ public class TestMonth {
          }
          assertEquals(currentMonth.getDays()[dom - 1].getIndex(), dom);
          assertEquals(currentMonth.getDays()[dom - 1].getName(), CalendarNames.DAYS_NAMES[EN_US][dow - 1]);
+      }
+   }
+
+   @Test
+   public void checkToString(){
+      Month currentMonth = Month.get(EN_US);
+      switch (currentMonth.getIndex()) {
+         case  1: assertEquals(currentMonth.toString(), "JANUARY (1)"); break;
+         case  2: assertEquals(currentMonth.toString(), "FEBRUARY (2)"); break;
+         case  3: assertEquals(currentMonth.toString(), "MARCH (3)"); break;
+         case  4: assertEquals(currentMonth.toString(), "APRIL (4)"); break;
+         case  5: assertEquals(currentMonth.toString(), "MAY (5)"); break;
+         case  6: assertEquals(currentMonth.toString(), "JUNE (6)"); break;
+         case  7: assertEquals(currentMonth.toString(), "JULY (7)"); break;
+         case  8: assertEquals(currentMonth.toString(), "AUGUST (8)"); break;
+         case  9: assertEquals(currentMonth.toString(), "SEPTEMBER (9)"); break;
+         case 10: assertEquals(currentMonth.toString(), "OCTOBER (10)"); break;
+         case 11: assertEquals(currentMonth.toString(), "NOVEMBER (11)"); break;
+         case 12: assertEquals(currentMonth.toString(), "DECEMBER (12)"); break;
       }
    }
 }
