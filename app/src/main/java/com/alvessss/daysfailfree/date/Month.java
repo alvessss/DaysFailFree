@@ -55,7 +55,24 @@ public class Month {
       return days;
    }
 
+   public Day getDay(int index){
+      if (index < days.length){
+         return days[index];
+      }
+
+      return null;
+   }
+
    public int getCurrentDay(){
       return currentDay;
+   }
+
+   public boolean increaseCurrentDay(){
+      if (currentDay < (days.length - 1)){
+         currentDay++;
+         return true;
+      }
+
+      return false;
    }
 }
