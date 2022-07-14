@@ -7,8 +7,7 @@ import org.junit.Test;
 import java.util.Calendar;
 
 public class TestMonth {
-   @Test
-   public void checkMonthNames(){
+   @Test public void checkMonthNames(){
       Month currentMonth = Month.get(EN_US);
       switch (currentMonth.getIndex()) {
          case  1: assertEquals(currentMonth.getName().toUpperCase(), CalendarNames.MONTH_NAMES[EN_US][0]); break;
@@ -26,8 +25,7 @@ public class TestMonth {
       }
    }
 
-   @Test
-   public void checkWeekDaysNames(){
+   @Test public void checkWeekDaysNames(){
       Month currentMonth = Month.get(EN_US);
       Calendar calendar = Calendar.getInstance();
 
@@ -44,8 +42,7 @@ public class TestMonth {
       }
    }
 
-   @Test
-   public void checkToString(){
+   @Test public void checkToString(){
       Month currentMonth = Month.get(EN_US);
       switch (currentMonth.getIndex()) {
          case  1: assertEquals(currentMonth.toString(), "JANUARY (1)"); break;
