@@ -10,6 +10,11 @@ public class Day {
       this.index = index;
    }
 
+   @Override
+   public String toString(){
+      return String.format("%s (%d)", name, index);
+   }
+
    public String getName(){
       return name;
    }
