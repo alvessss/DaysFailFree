@@ -11,14 +11,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        tools:ignore="UselessParent">
 
         <TextView
             android:id="@+id/header_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="January"
-            android:textSize="@dimen/header_text_size"
+            android:textSize="@dimen/_20sdp"
             android:textColor="@color/header_text_color"
             android:background="@color/header_color"
             android:gravity="center"/>
@@ -43,8 +44,8 @@
                 android:text="mon"
                 android:textColor="@color/days_of_week_columns_foreground_color"
                 android:background="@color/days_of_week_columns_background_color"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -52,8 +53,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="1"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -61,8 +62,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="8"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -70,8 +71,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="15"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -79,8 +80,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="22"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -88,8 +89,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="29"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
         </LinearLayout>
 
@@ -107,8 +108,8 @@
                 android:text="tue"
                 android:textColor="@color/days_of_week_columns_foreground_color"
                 android:background="@color/days_of_week_columns_background_color"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -116,8 +117,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="2"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -125,8 +126,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="9"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -134,8 +135,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="16"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -143,8 +144,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="23"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -152,8 +153,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="30"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
         </LinearLayout>
 
@@ -170,8 +171,8 @@
                 android:text="wed"
                 android:textColor="@color/days_of_week_columns_foreground_color"
                 android:background="@color/days_of_week_columns_background_color"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -179,8 +180,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="3"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -188,8 +189,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="10"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -197,8 +198,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="17"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -206,8 +207,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="24"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -215,8 +216,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="31"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
         </LinearLayout>
 
@@ -233,8 +234,8 @@
                 android:text="thu"
                 android:textColor="@color/days_of_week_columns_foreground_color"
                 android:background="@color/days_of_week_columns_background_color"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -242,8 +243,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="4"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -251,8 +252,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="11"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -260,8 +261,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="18"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -269,8 +270,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="25"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -278,8 +279,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="32"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
         </LinearLayout>
 
@@ -296,8 +297,8 @@
                 android:text="fri"
                 android:textColor="@color/days_of_week_columns_foreground_color"
                 android:background="@color/days_of_week_columns_background_color"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -305,8 +306,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="5"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -314,8 +315,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="12"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -323,8 +324,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="19"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -332,8 +333,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="26"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -341,8 +342,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="33"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
         </LinearLayout>
 
@@ -359,8 +360,8 @@
                 android:text="sat"
                 android:textColor="@color/days_of_week_columns_foreground_color"
                 android:background="@color/days_of_week_columns_background_color"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -368,8 +369,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="6"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -377,8 +378,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="13"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -386,8 +387,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="20"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -395,8 +396,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="27"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -404,8 +405,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="34"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
         </LinearLayout>
 
@@ -422,8 +423,8 @@
                 android:text="sun"
                 android:textColor="@color/days_of_week_columns_foreground_color"
                 android:background="@color/days_of_week_columns_background_color"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -431,8 +432,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="7"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -440,8 +441,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="14"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -449,8 +450,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="21"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -458,8 +459,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="28"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
 
             <TextView
@@ -467,8 +468,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="35"
-                android:textSize="@dimen/days_of_week_columns_font_size"
-                android:padding="@dimen/days_of_week_columns_padding"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_7sdp"
                 android:layout_margin="1dp"/>
         </LinearLayout>
     </LinearLayout>
