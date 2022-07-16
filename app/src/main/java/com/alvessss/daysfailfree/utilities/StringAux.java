@@ -11,7 +11,7 @@ public final class StringAux {
    public static String capitalizeFirstLetter(String originalString){
       int[] blankSpacesIndexes = allIndexesOf(BLANK_SPACE, originalString);
       String lowerCaseString = originalString.toLowerCase();
-      StringBuilder capitalizedStringBuilder = new StringBuilder(originalString);
+      StringBuilder capitalizedStringBuilder = new StringBuilder(lowerCaseString);
       if (blankSpacesIndexes.length == 0){
          if (lowerCaseString.length() > 1){
             String lowerCaseSubstring = lowerCaseString.substring(1, lowerCaseString.length());

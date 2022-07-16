@@ -28,5 +28,6 @@ public class StringAuxTest {
       assertEquals("  Vasco Da Gama  A", capitalizeFirstLetter("  vasco da gama  a"));
       assertEquals("A ", capitalizeFirstLetter("a "));
       assertEquals(" A", capitalizeFirstLetter(" a"));
+      assertEquals(" Aa Bb Cc Dd ", capitalizeFirstLetter(" aA bB cC dD "));
    }
 }
