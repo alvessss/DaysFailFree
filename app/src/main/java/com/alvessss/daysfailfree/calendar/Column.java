@@ -39,14 +39,17 @@ public class Column {
       }
    }
 
-   private String name;
-   private DayPlace[] dayPlaces = new DayPlace[5];
+   private final String name;
+   private final DayPlace[] dayPlaces = new DayPlace[5];
+   private int dayPlaceCurrentVacancy = 0;
 
-   private Column(String name){
-      this.name = name;
-   }
+   private Column(String name){ this.name = name; }
+   public String getName(){ return name; }
 
-   public String getName(){
-      return name;
+   public void add(int numberOfDay){
+      if (dayPlaceCurrentVacancy < dayPlaces.length){
+         dayPlaces[dayPlaceCurrentVacancy].setNumberValue(numberOfDay);
+         dayPlaceCurrentVacancy++;
+      }
    }
 }
